@@ -2,7 +2,14 @@
 html,
 body {
   width: auto !important;
-  overflow-x: hidden !important;
+  /* overflow-x: hidden !important; */
+  overflow: hidden !important; /* 세로/가로 스크롤 완전 차단 */
+}
+
+
+/* Chromium 스크롤바 표시 강제 비활성화 */
+::-webkit-scrollbar {
+  display: none !important;
 }
 
 /* font */
